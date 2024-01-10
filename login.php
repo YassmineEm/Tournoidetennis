@@ -41,7 +41,7 @@
                 session_start();
                 $_SESSION["joueur"] = "yes";
                 $_SESSION["role"] = $joueur["role"];
-
+                $_SESSION["email"] = $email;
                 if($joueur["role"] === 'admin'){
                     header("Location: admin_dashboard.php");
                     die();
